@@ -1,0 +1,505 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+
+
+
+h1{font-size: 2em;
+font-family: sans-serif;
+color: antiquewhite, aquamarine;
+}
+
+h2{font-size: 2.8em;
+    font-family:'Hubballi', cursive;
+    font-weight: bold;
+}
+
+h3{font-size: 1.5em;}
+
+p{font-size: 1em;}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: aquamarine;
+    
+}
+
+button:hover{
+    background-color: rgb(46, 223, 164);
+}
+
+.container{
+   max-width: 1400px;
+   margin: auto; 
+}
+
+
+/* HEADER */
+header{
+    height: 100px;
+    background-color: #4d4d5c;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    color:rgb(94, 189, 157);
+    font-weight: 200;
+
+}
+
+
+.menu a{
+    color: antiquewhite;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+    transition: 0.4s;
+
+}
+
+
+.mostrar-menu{
+    order: 1;
+}
+
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: aquamarine;
+}
+
+
+
+#check{
+    display: none;
+}
+
+
+/* BANNER */
+#banner{
+    padding: 0 50px;
+    background-image: url(./images/IMG-20220207-azulcelestestrass.jpg); 
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    max-height: max-content;
+}
+
+#banner::before{
+    content: '';
+    background: rgba(65, 65, 82, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    left: 0%;
+
+}
+
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.contenido-banner a{
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgba(247, 242, 242, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(240, 226, 226);
+    background-color: rgb(58, 151, 120);
+}
+
+
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 10px;
+
+}
+
+.contenido-banner h3 span{
+    font-weight: 600;
+
+}
+
+.boton-turnos{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid aquamarine;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+
+.boton-turnos:hover{
+    background: rgb(11, 105, 74)
+}
+
+
+/* Precios/ Promos/ formas de pago */
+
+#precios{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(204, 238, 227);
+    background-image: url(./images/Fondo\ abstracto\ colorido\ de\ acuarela\ _\ Vector\ Gratis.jpg);
+    background-size: cover;
+    padding-bottom: 120px;
+    padding-top: 65px;
+    
+
+}
+
+
+#precios div{
+    padding: 40px 20px;
+}
+
+#precios div h4{
+    color: rgb(40, 119, 93);
+    font-size: 35px;
+    font-family: cursive;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+#precios div p{
+font-size: 18px;
+font-family: monospace;
+font-weight: bolder;
+display: flex;
+justify-content: center;
+text-align: center;
+color: black;
+padding-bottom: 5px;
+}
+
+#text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.boton-mp{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color:#fff;
+    background-color: rgb(2, 128, 247);
+    text-decoration: none;
+    align-self: baseline;
+    
+}
+
+.boton-mp:hover{
+    background-color:rgb(7, 97, 182) ;
+}
+
+
+/*ACERCA DE MI*/
+
+#acerca{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(white, grey);
+    padding-bottom: 30px;
+    
+}
+
+#acerca div{
+    padding: 30px 30px;
+    padding-bottom: 30px;
+}
+
+#acerca div h2{
+    font-family: cursive;
+
+}
+
+#acerca div p{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+}
+
+#Servicios{
+    background-color: rgb(30, 30, 30);
+    color: antiquewhite ;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    
+}
+
+#Servicios.container{
+        padding: 150px 12px;
+
+}
+
+#Servicios h2{
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Servicios p{
+    display: none;
+}
+
+#Servicios .carta{
+background-position: center center;
+background-size: cover;
+padding: 50px;
+margin: 20px;
+border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(./images/IMG-20220207-rosayblanco.jpg);
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(./images/IMG-20220207-strass.jpg);
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(./images/IMG-20220207-natural.jpg);
+
+}
+
+#contacto{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 35px;
+    height: 45vh;
+    
+   
+}
+
+#contacto.container{
+    padding: 100px 12px;
+    text-align: center;
+   
+    }
+
+#contacto h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+#contacto a{
+    font-size: 45px;
+    color: blue;
+    text-decoration: none;
+    
+    }
+
+div.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+footer{
+    background-color: rgb(145, 140, 140);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+footer p{
+    margin: 0;
+    padding: 20px;
+    color: rgb(26, 24, 24);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu{
+    display: block;
+    
+}
+
+
+
+
+@media (min-width:720px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+header nav{
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #4d4d5c;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+
+}
+
+.menu a{
+    display: block;
+    padding: 20px;
+    }
+
+.esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    
+    }
+
+#check:checked ~ .menu{
+    right: 0;
+
+}
+
+
+#Tratamientos .procedimientos{
+    display: block;
+
+}
+
+
+/*Precio, Promos */
+#precios{
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
